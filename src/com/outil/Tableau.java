@@ -55,5 +55,34 @@ public class Tableau {
         }
     }
 
+    // nombre de nombre pair d'un un tableau de entier
+    public static int nombreDeNombrePair(int[] tableau) {
+        int nombreDeNombrePair = 0;
+        for (int i = 0; i < tableau.length; i++) {
+            if(tableau[i] % 2 == 0)
+                nombreDeNombrePair++;
+        }
+        return nombreDeNombrePair;
+    }
 
+    // nombre de nombre impair d'un tableau de entier
+    public static int nombreDeNombreImpair(int[] tableau){
+        int nombreDenombreImpair = 0;
+        for (int i = 0; i < tableau.length; i++) {
+            if(tableau[i] % 2 != 0)
+                nombreDenombreImpair++;
+        }
+        return nombreDenombreImpair;
+    }
+
+    // is this elemnt exist in the table
+    public static boolean isNumberExist(int[] tableau, int number) {
+        boolean exist = false;
+        for (int i = 0; i < tableau.length; i++) {
+            if(tableau[i] == number)
+                exist = true;
+        }
+
+        return exist;
+    }
 }
