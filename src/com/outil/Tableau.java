@@ -85,4 +85,49 @@ public class Tableau {
 
         return exist;
     }
+
+    // minimum d'un tableau d'entier
+    public static int minimum(int[] tableau) {
+        int min = tableau[0];
+        for (int i = 0; i < tableau.length; i++) {
+            if (tableau[i] < min) {
+                min = tableau[i];
+            }
+        }
+        return min;
+    }
+
+    // minimum d'un tableau de réel
+    public static float minimum(float[] tableau) {
+        float min = tableau[0];
+        for (int i = 0; i < tableau.length; i++) {
+            if (tableau[i] < min) {
+                min = tableau[i];
+            }
+        }
+        return min;
+    }
+
+    // maximum d'un tableau d'entier
+    public static int maximum(int[] tableau) {
+        int max = tableau[0];
+        for (int i = 0; i < tableau.length; i++) {
+            if (tableau[i] > max) {
+                max = tableau[i];
+            }
+        }
+        return max;
+    }
+
+    // maximum d'un tableau de réel
+    public static float maximum(float[] tableau) {
+        float max = tableau[0];
+        for (int i = 0; i < tableau.length; i++) {
+            if (tableau[i] > max) {
+                max = tableau[i];
+            }
+        }
+        return max;
+    }
+
 }

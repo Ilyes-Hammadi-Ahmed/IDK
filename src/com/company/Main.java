@@ -10,9 +10,7 @@ public class Main {
         int[] tableau = new int[10];
         Tableau.remplisageAleatoire(tableau, 1, 8);
         Tableau.affiche(tableau);
-        if(Tableau.isNumberExist(tableau, 3))
-            System.out.println("nombre de nombre pair = " + Tableau.nombreDeNombreImpair(tableau));
-        else
-            System.out.println("rien ");
+        System.out.println("le max : " + Tableau.maximum(tableau));
+        System.out.println("le min : " + Tableau.minimum(tableau));
     }
 }

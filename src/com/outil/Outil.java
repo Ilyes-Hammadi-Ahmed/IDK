@@ -37,6 +37,8 @@ public class Outil {
             result *= 2;
         }
         return result;
+
+
     }
 
 
