@@ -130,4 +130,154 @@ public class Tableau {
         return max;
     }
 
+    // somme d'un tableau d'entier
+    public static int somme(int[] tableau) {
+        int somme = 0;
+        for (int i = 0; i < tableau.length; i++) {
+            somme += tableau[i];
+        }
+        return somme;
+    }
+
+    // somme d'un tableau de réel
+    public static float somme(float[] tableau) {
+        float somme = 0;
+        for (int i = 0; i < tableau.length; i++) {
+            somme += tableau[i];
+        }
+        return somme;
+    }
+
+    // somme de deux tableau d'entier
+    public static int[] add(int[] tableau1, int[] tableau2) {
+
+        int[] tableau;
+        if (tableau1.length > tableau2.length) {
+            tableau = tableau1.clone();
+            for (int i = 0; i < tableau2.length; i++) {
+                tableau[i] += tableau2[i];
+            }
+        } else {
+            tableau = tableau2.clone();
+            for (int i = 0; i < tableau1.length; i++) {
+                tableau[i] += tableau1[i];
+            }
+        }
+        return tableau;
+    }
+
+    // somme de deux tableau de réel
+    public static float[] add(float[] tableau1, float[] tableau2) {
+
+        float[] tableau;
+        if (tableau1.length > tableau2.length) {
+            tableau = tableau1.clone();
+            for (int i = 0; i < tableau2.length; i++) {
+                tableau[i] += tableau2[i];
+            }
+        } else {
+            tableau = tableau2.clone();
+            for (int i = 0; i < tableau1.length; i++) {
+                tableau[i] += tableau1[i];
+            }
+        }
+        return tableau;
+    }
+
+    // methode qui renvoie un tableau d'entier de 0 a n
+    public static int[] tableauEntier(int length) {
+        int[] tableau = new int[length];
+        for (int i = 0; i < tableau.length; i++) {
+            tableau[i] = i;
+        }
+        return tableau;
+    }
+
+    // methode qui renvoie un tableau de nombre pair
+    public static int[] tableauNombrePair(int length) {
+        int[] tableau = new int[length];
+        for (int j = 2, i = 0; i < tableau.length; j++) {
+            if (j % 2 == 0) {
+                tableau[i] = j;
+                i++;
+            }
+        }
+        return tableau;
+    }
+
+    // methode qui envoie un tableau de nombre impar
+    public static int[] tableauNombreImpair(int length) {
+        int[] tableau = new int[length];
+        for (int j = 1, i = 0; i < tableau.length; j++) {
+            if (j % 2 != 0) {
+                tableau[i] = j;
+                i++;
+            }
+        }
+        return tableau;
+    }
+
+    // methode qui renvoie la suite de fibonnaci
+    public static int[] tableauFibonacci(int premierTerme, int deusiemeTerme, int length) {
+        int[] tableau = new int[length];
+        tableau[0] = premierTerme;
+        tableau[1] = deusiemeTerme;
+        for (int i = 2; i < tableau.length; i++) {
+            tableau[i] = tableau[i-1] + tableau[i-2];
+        }
+        return tableau;
+    }
+
+    // methode qui test si un tableau est trie dans un ordre croissant
+    public static boolean isSortedCroissant(int[] tableau) {
+        int i;
+        for (i = 1; i < tableau.length && tableau[i - 1] < tableau[i]; i++) {
+
+        }
+        if(i >= tableau.length)
+            return true;
+        else
+            return false;
+    }
+
+    // methode qui test si un tableau est trier dans un ordre decroissant
+    public static boolean isSortedDecroissant(int[] tableau) {
+        int i;
+        for (i = 1; i < tableau.length && tableau[i - 1] > tableau[i]; i++) {
+
+        }
+        if(i >= tableau.length)
+            return true;
+        else
+            return false;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
