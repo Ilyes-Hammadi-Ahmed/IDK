@@ -15,3 +15,4 @@ modifier depuis mozila
 entrain de sentrainer pour le travail en equipe 
 yo pi vive le travail d'equipe 
 
+une ligne pour chrome 
