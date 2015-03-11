@@ -12,3 +12,5 @@ voisi une putain de ligne
 une autre de ligne depuos mozila
 modifier depuis mozila 
 
+entrain de sentrainer pour le travail en equipe 
+
